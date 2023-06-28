@@ -1,0 +1,131 @@
+:root{
+    /* cores*/  
+
+    --primario: #0A2463;
+    --primario-hover:#09193D;
+    --secondaria:#007bff;
+    --contraste:#ce8d3e;
+    --contraste-hover: #c77e25;
+    --texto-primario: #333333;
+    --texto-secundario:#696969;
+    --borda: #C8C8C8;
+    --background:#fdfdfd;
+    --background2:#ebebeb;
+    /*escala*/
+    --1x:0.25rem;
+    --2x:0.5rem;
+    --3x:0.75rem;
+    --4x:1rem;
+    --5x:1.25rem;
+    --6x:1.5rem;
+    --7x:1.75rem;
+    --8x:2rem;
+    --9x:2.25rem;
+    --10x:2.75rem;
+
+     /*font-size*/
+
+     --pequeno: 16px;
+     --mediano: 18px;
+     --medio: 20px;
+     --grande: 24px;
+     --titulo: 32px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display:flex;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primario);
+    padding: var(--5x) 8%;
+    
+}
+h1 {
+    color: white;
+
+}
+nav {
+    color: white;
+    display: flex; 
+    gap: var(--6x);
+    
+}
+.navLink {
+    text-decoration: none;
+    font-size: var(--mediano);
+    color: white;
+}
+.navLink:hover {
+    color: var(--contraste);
+}
+
+
+main{
+     width: 70%;
+     background: var(--background);
+     padding-left: var(--7x);
+}
+
+aside{
+     width: 30%;
+}
+footer{
+    width:100%;
+}
+
+#artigos{
+    display: flex;
+    flex-direction: column;
+    padding: var(--10x) var(--3x);
+   
+    gap: var(--10x);
+}
+
+.CardDeArtigo{
+    display: flex;
+    gap: var(--4x);
+    aling-items: center;
+    justify-content: center;
+    padding-bottom: var(--3x);
+    border-bottom: solid 1px var(--borda);
+}
+.imagemCardDeArtigo{
+    width:340px;
+    height: 200px;
+}
+table{
+    margin-top: var(--4x);
+    border: 1px solid var(--borda);
+    align-items: center;
+}
+th{
+    text-align: center;
+    font-weight: 600;
+  
+}
+
+td{
+    padding: var(--2x);
+    border-top: 1px solid var(--borda);
+    color: var(--texto-secundario);
+    margin:0;
+}
+tr:hover {
+    background: var(--background2);
+}
