@@ -1,16 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+
 :root{
     /* cores*/  
 
     --primario: #0A2463;
     --primario-hover:#09193D;
-    --secondaria:#007bff;
+    --secundario:#0f3591;
     --contraste:#ffef91;
-    --contraste-hover: #c77e25;
     --texto-primario: #333333;
     --texto-secundario:#696969;
     --borda: #C8C8C8;
     --background:#fdfdfd;
     --background2:#ebebeb;
+    --background3:#f8f8f8;
     /*escala*/
     --1x:0.25rem;
     --2x:0.5rem;
@@ -22,13 +26,14 @@
     --8x:2rem;
     --9x:2.25rem;
     --10x:2.75rem;
-
+    --20x:5.25rem;
      /*font-size*/
-
+     --muito-pequeno:14px;
      --pequeno: 16px;
      --mediano: 18px;
      --medio: 20px;
      --grande: 24px;
+     --muito-grande: 28px;
      --titulo: 32px;
 }
 *{
@@ -37,7 +42,7 @@
     padding: 0;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
-    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-family: 'Poppins', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -46,7 +51,55 @@ html{
 body{
     display:flex;
     flex-wrap: wrap;
+    background: var(--background);
 }
+
+/* ============ textos =========== */  
+h1 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: var(--titulo);
+
+
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--titulo);
+    color: var(--texto-primario);
+}
+h3{
+    padding-top: var(--10x);
+    font-size: var(--grande);
+    font-weight: 600;
+    color: var(--texto-primario);
+}
+h4{
+    font-size: var(--grande);
+    color: var(--texto-primario);
+}
+p{
+    font-size: var(--pequeno);
+    color: var(--texto-secundario);
+    text-align: justify;
+    padding: var(--1x) 0;
+}
+span{
+    font-size: var(--muito-pequeno);
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* imagem */ 
+img{
+    object-fit: cover;
+}
+
+
+
+/*containers*/
 header{
     width: 100%;
     display: flex;
@@ -56,30 +109,24 @@ header{
     padding: var(--5x) 8%;
     
 }
-h1 {
-    color: white;
-
-}
 nav {
     color: white;
     display: flex; 
-    gap: var(--6x);
+    gap: var(--8x);
     
 }
-.navLink {
-    text-decoration: none;
-    font-size: var(--mediano);
-    color: white;
-}
-.navLink:hover {
-    color: var(--contraste);
-}
-
-
 main{
-     width: 70%;
-     background: var(--background);
+     width: 68%;
      padding-left: var(--7x);
+     display: flex;
+     flex-direction: column;
+     gap: var(--10x);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--4x);
+    padding: var(--10x) var(--3x);
 }
 
 aside{
@@ -88,16 +135,19 @@ aside{
 footer{
     width:100%;
 }
-
-#artigos{
-    display: flex;
-    flex-direction: column;
-    padding: var(--10x) var(--3x);
-   
-    gap: var(--10x);
+/*navBar*/
+.navLink {
+    text-decoration: none;
+    font-size: var(--pequeno);
+    letter-spacing: 1px;
+    color: white;
 }
-
+.navLink:hover {
+    color: var(--contraste);
+}
+/* Artigos */
 .CardDeArtigo{
+    padding: var(--10x) 0;
     display: flex;
     gap: var(--4x);
     aling-items: center;
@@ -105,19 +155,34 @@ footer{
     padding-bottom: var(--3x);
     border-bottom: solid 1px var(--borda);
 }
+.CardDeArtigo:hover {
+    background: var(--background3);
+}
+.CardDeArtigo:hover h4{
+    color: var(--primario);
+}
 .imagemCardDeArtigo{
     width:340px;
-    height: 200px;
+    height: 100%;
+    object-fit: cover;
 }
+.imagemCardDeArtigo:hover {
+    filter: brightness(80%);
+}
+.conteudoCardDeArtigo{
+    display: grid;
+    gap: var(--2x);
+    padding-right: var(--10x);
+}
+
+/* tabela artigos */
 table{
     margin-top: var(--4x);
-    border: 1px solid var(--borda);
     align-items: center;
 }
 th{
     text-align: center;
-    font-weight: 600;
-  
+    font-weight: 600;  
 }
 
 td{
@@ -128,4 +193,137 @@ td{
 }
 tr:hover {
     background: var(--background2);
+}
+
+/* Seção de Videos */
+#videos{
+    padding: var(--10x) 1%;
+}
+#videoPrincipal{
+    margin: var(--10x) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--2x);
+    width: 100%;
+    
+}
+
+.carrosselDeVideos{
+    display: flex;
+    overflow: scroll;
+    gap: var(--4x);
+}
+    /*scrollbar*/
+    .carrosselDeVideos::-webkit-scrollbar{
+        width: 0;
+        height: var(--2x);
+    }
+    .carrosselDeVideos::-webkit-scrollbar-track{
+        background: var(--background2);    
+    }
+    .carrosselDeVideos::-webkit-scrollbar-thumb {
+        background-color: var(--texto-secundario);   
+        border-radius: 3px;
+    }
+
+.videoCard{
+    min-width: 400px;
+    padding: var(--5x) 0;
+    background: var(--background3);
+}
+.videoCard iframe{
+    width: 100%;
+    min-height:200px;
+    height: auto;
+}
+.videoCard h4{
+    font-size: var(--mediano);
+    padding: var(--1x);
+    text-align: center;
+}
+/* formulário */
+
+form{
+    align-self: center;
+    display: grid;
+    width: 80%;
+    min-width:300px;
+}
+label{
+
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+input, select, textarea{
+    margin-bottom: var(--4x);
+    width: 100%;
+    padding: var(--3x);
+    border: 1px solid var(--borda);
+    font-size: var(--pequeno);
+    resize: none;
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: var(--pequeno);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: var(--secundario);
+    cursor:pointer;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: var(--primario);
+}
+/*--------------footer-----------*/
+footer{
+    padding: var(--10x);
+    background-color: var(--primario-hover);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer div{ 
+    width:30%;
+   
+}
+footer div h3{
+    padding-top: var(--5x);
+    padding-bottom: var(--2x);
+    color: white;
+    font-size: var(--grande);
+}
+footer div ul{
+    padding: var(--1x);
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    gap: var(--2x);
+    
+}
+footer div ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: var(--mediano);
+}
+footer div ul li a:hover{
+    color: var(--contraste);
+}
+footer h2{
+    color: white;
+    letter-spacing: 2px;
+    padding: 0;
+    width:100%; 
+    font-size: 40px;
+    text-transform: none;
+}
+footer h3{
+    color: white;
+    font-weight: 500;
+}
+footer h3 strong{
+    letter-spacing: 1px;
 }
