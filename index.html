@@ -3,23 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Portal de Notícia">
-    <meta property="og:description" content="As melhores notícias da atualidade - venha conferir">
-    <meta property="og:image" content="https://img.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_23-2149182295.jpg?size=626&ext=jpg">
-    <meta property="og:url" content="https://quilantera.github.io/newsletter/">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portal de Notícia" />
+    <meta property="og:description" content="As melhores notícias da atualidade - venha conferir"/>
+    <meta property="og:image" content="https://img.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_23-2149182295.jpg?size=626&ext=jpg"/>
+    <meta property="og:url" content="https://quilantera.github.io/newsletter/"/>
+    <meta property="og:type" content="website" />
 
+    <link rel="icon" type="image/jpg"  href="https://img.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_23-2149182295.jpg?size=626&ext=jpg"/>
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
 
     <title>Portal de notícias</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
       <h1>Portal de notícias</h1>
       <nav>
@@ -31,17 +27,17 @@
     </header>
     <main>
       <section id="artigos">
-        <h2>Artigos</h2>
-        <h3 id="artigosFutebol">Futebol</h3>
-        <article class="CardDeArtigo">
-          <a href="#">
+      
+        <h3 id="artigosEsportes">Esportes</h3>
+        <article class="CardDeArtigo" id="palmeirasFlamengo">
+          <a href="artigos/flamengo-e-palmeiras.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/flamengo-e-palmeiras.png"
               alt="flamengo e palmeiras"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/flamengo-e-palmeiras.html">
               <h4>
                 Flamengo e Palmeiras lideram arrecadações em premiações da
                 Conmebol
@@ -56,15 +52,15 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="arsenalRice">
+          <a href="artigos/arsenal-rice.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/rice-no-arsenal.jpeg"
               alt="jogador Declan Rice"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/arsenal-rice.html">
               <h4>
                 Arsenal oferece R$ 611 milhões por Rice, e Manchester City
                 desiste de negociação
@@ -79,8 +75,8 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="aeronavePalmeiras">
+          <a href="artigos/aeronave-palmeiras.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/aeronave-do-palmeiras.jpeg"
@@ -88,7 +84,7 @@
             />
           </a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/aeronave-palmeiras.html">
               <h4>
                 Saiba quando o Palmeiras pode estrear o avião adquirido por
                 Leila Pereira
@@ -105,15 +101,15 @@
 
         <h3 id="artigosPolitica">Politica</h3>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="eleicoesPernambuco">
+          <a href="artigos/eleicoes-pernambuco.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/pernambuco.jpg"
               alt="Pernambuco"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/eleicoes-pernambuco.html">
               <h4>TRE divulga calendário de eleição suplementar em Tacaimbó</h4>
             </a>
             <p>
@@ -126,15 +122,15 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="terraIndigena">
+          <a href="artigos/terra-indigena.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/terra-indigena.jpg"
               alt="desmatamento da terra indígena"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/terra-indigena.html">
               <h4>
                 Barroso dá 10 dias para União informar sobre ações contra
                 invasões em terra indígena do Pará
@@ -149,15 +145,15 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="edileneLobo">
+          <a href="artigos/edilene-lobo.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/edilene-lobo-rr.png"
               alt="Edilene Lobo"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/edilene-lobo.html">
               <h4>
                 Edilene Lobo é nomeada ministra substituta do TSE, e Corte passa
                 a ter 1ª mulher negra
@@ -174,15 +170,15 @@
 
         <h3 id="artigosEntretenimento">Entretenimento</h3>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="anitta">
+          <a href="artigos/anitta-netflix.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/anitta.jpeg"
               alt="Anitta"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/anitta-netflix.html">
               <h4>A Netflix responder a Anitta é MUITO BLACK MIRROR!</h4>
             </a>
             <p>
@@ -193,15 +189,15 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="neymar">
+          <a href="artigos/heranca-neymar.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/neymar.jpg"
               alt="Neymar"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/heranca-neymar.html">
               <h4>
                 Neymar pode receber herança de fã? Advogada explica caso que
                 está repercutindo nas redes sociais
@@ -216,15 +212,15 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="thomasAquino">
+          <a href="artigos/thomas-aquino.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/thomas-aquino.jpg"
               alt="Thomás Aquino"
           /></a>
           <div class="conteudoCardDeArtigo">
-            <a href="#">
+            <a href="artigos/thomas-aquino.html">
               <h4>
                 Thomás Aquino, de Os Outros, quer ver a série ganhar
                 reconhecimento internacional: 'Tenho essa ganância'
@@ -239,15 +235,15 @@
           </div>
         </article>
 
-        <article class="CardDeArtigo">
-          <a href="#">
+        <article class="CardDeArtigo" id="vinijr">
+          <a href="artigos/vini-jr.html">
             <img
               class="imagemCardDeArtigo"
               src="imagens/vinijr.jpg"
               alt="Vinícius Junior"
           /></a>
-          <div class="conteudoCardDeArtigo">
-            <a href="#">
+          <div class="conteudoCardDeArtigo" >
+            <a href="artigos/vini-jr.html">
               <h4>
                 Vini Jr. leva encarada de cachorro na casa de influenciador e
                 brinca: 'Fica na paz'
@@ -265,7 +261,7 @@
       </section>
 
       <section id="noticias">
-        <h2>Notícias</h2>
+       
         <h3 id="noticias-locais">Notícias locais</h3>
         <div>
           <h4>
@@ -374,9 +370,8 @@
       </section>
 
       <section id="tabelaDeArtigos">
-        
         <h2>Notícias Populares</h2>
-        
+
         <table>
           <thead>
             <tr>
@@ -386,7 +381,6 @@
               <th>Data de publicação</th>
             </tr>
           </thead>
-        
           <tbody>
             <tr>
               <td align="center">
@@ -404,7 +398,7 @@
               <td align="center">Conmebol</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -418,7 +412,7 @@
               <td align="center">Futebol inglês</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -435,7 +429,7 @@
               <td align="center">Palmeiras</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -449,7 +443,7 @@
               <td align="center">Diário de Pernambuco</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -466,7 +460,7 @@
               <td align="center">G1 Globo</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -483,7 +477,7 @@
               <td align="center">São Paulo</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -497,7 +491,7 @@
               <td align="center">CNN Brasil</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -514,7 +508,7 @@
               <td align="center">G1 Globo</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -531,7 +525,7 @@
               <td align="center">GShow</td>
               <td align="center">🧭28/06/2023</td>
             </tr>
-        
+
             <tr>
               <td align="center">
                 <img
@@ -554,48 +548,100 @@
 
       <section id="videos">
         <h2>Assista em vídeo</h2>
-       
-            <article id="videoPrincipal">
-                <iframe src="https://www.youtube.com/embed/PGxTuv6k0KI" title="YouTube video player" width="100%" height="450px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>5 Hábitos que Todo Programador Júnior Já Deveria Ter</h4>
-                <p>Aprender a programar é algo realmente sensacional, mas independente se você é um programador júnior ou programador sênior, o ato de estudar e trabalhar com programação pode deixar você louco.</p>
-            </article>
 
-            <div class="carrosselDeVideos">
-            <article class="videoCard">
-                <iframe src="https://www.youtube.com/embed/rHANBi7E2cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>Descobri Como Consertar o Meu Maior Problema</h4>
-            </article>
+        <article id="videoPrincipal">
+          <iframe
+            src="https://www.youtube.com/embed/PGxTuv6k0KI"
+            title="YouTube video player"
+            width="100%"
+            height="450px"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <h4>5 Hábitos que Todo Programador Júnior Já Deveria Ter</h4>
+          <p>
+            Aprender a programar é algo realmente sensacional, mas independente
+            se você é um programador júnior ou programador sênior, o ato de
+            estudar e trabalhar com programação pode deixar você louco.
+          </p>
+        </article>
 
-            <article class="videoCard">
-                <iframe src="https://www.youtube.com/embed/RJvktZnZn6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>Teste do código MAL FEITO (quero ver você passar!)</h4>
-            </article>
+        <div class="carrosselDeVideos">
+          <article class="videoCard">
+            <iframe
+              src="https://www.youtube.com/embed/rHANBi7E2cI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Descobri Como Consertar o Meu Maior Problema</h4>
+          </article>
 
-            <article class="videoCard">
-                <iframe src="https://www.youtube.com/embed/YVI-q3idGiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>Recriei a interface do Spotify usando Tailwind</h4>
-                
-            </article>
+          <article class="videoCard">
+            <iframe
+              src="https://www.youtube.com/embed/RJvktZnZn6A"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Teste do código MAL FEITO (quero ver você passar!)</h4>
+          </article>
 
-            <article class="videoCard">
-                <iframe src="https://www.youtube.com/embed/46SLsu4ihqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>Inteligência Artificial brincando de Pique-Esconde</h4>
-            </article>
+          <article class="videoCard">
+            <iframe
+              src="https://www.youtube.com/embed/YVI-q3idGiM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Recriei a interface do Spotify usando Tailwind</h4>
+          </article>
 
-            <article class="videoCard">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RQXBdkFSbxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                <h4>EM MENOS DE 5 MINUTOS FAZENDO UM TAMAGOTCHI!</h4>
-            </article>
+          <article class="videoCard">
+            <iframe
+              src="https://www.youtube.com/embed/46SLsu4ihqA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Inteligência Artificial brincando de Pique-Esconde</h4>
+          </article>
 
-            <article class="videoCard">
-                <iframe src="https://www.youtube.com/embed/1ZDbOkW5ITs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>Vai criar um projeto React?! Veja esse vídeo antes (nova documentação do React)</h4>
-            </article>
+          <article class="videoCard">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/RQXBdkFSbxA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
 
+            <h4>EM MENOS DE 5 MINUTOS FAZENDO UM TAMAGOTCHI!</h4>
+          </article>
+
+          <article class="videoCard">
+            <iframe
+              src="https://www.youtube.com/embed/1ZDbOkW5ITs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>
+              Vai criar um projeto React?! Veja esse vídeo antes (nova
+              documentação do React)
+            </h4>
+          </article>
         </div>
       </section>
+
       <section id="contato">
         <h2>Entre em Contato</h2>
         <form id="formulario" action="">
@@ -634,44 +680,96 @@ Gostaria de saber mais detalhes sobre o assunto selecionado </textarea
         </form>
       </section>
     </main>
+
     <aside>
-        <h3>aside</h3>
+      <div class="cardLateral">
+        <h4> Autores Populares</h4>
+          <ul>
+            <li><a href="#palmeirasFlamengo">Conmebol <span>(45 posts)</span></a>
+            <li><a href="#aeronavePalmeiras">Palmeiras <span>(20 posts)</span></a>
+            <li><a href="#arsenalRice">Futebol inglês <span>(17 posts)</span></a>
+            <li><a href="#terraIndigena">G1 Globo <span>(12 posts)</span></a>
+            <li><a href="#anitta">CNN Brasil <span>(8 posts)</span></a>
+           
+          </ul>
+          
+      </div>
+
+      <div class="cardLateral">
+        <h4> Artigos Classificados</h4>
+        <ul>
+          <li> 
+            <h5>Esportes</h5>
+            <ul>
+              <li><a href="#palmeirasFlamengo">Flamengo e Palmeiras lideram arrecadações...</a></li>
+              <li><a href="#arsenalRice">Arsenal oferece R$ 611 milhões por Rice...</a></li>
+              <li><a href="#aeronavePalmeiras">Saiba quando o Palmeiras pode estrear o...</a></li>                
+            </ul>
+          </li>
+          <li> 
+            <h5>Política</h5>
+            <ul>
+              <li><a href="#eleicoesPernambuco">TRE divulga calendário de eleição suplementar...</a></li>
+              <li><a href="#terraIndigena">Barroso dá 10 dias para União informar sobre ações...</a></li>
+              <li><a href="#edileneLobo">Edilene Lobo é nomeada ministra substituta do TSE...</a></li>                
+            </ul>
+          </li>
+          <li> 
+            <h5>Entretenimento</h5>
+            <ul>
+              <li><a href="#anitta">A Netflix responder a Anitta é MUITO BLACK MIRROR!</a></li>
+              <li><a href="#neymar">Neymar pode receber herança de fã? Advogada explica...</a></li>
+              <li><a href="#thomasAquino">Thomás Aquino, de Os Outros, quer ver a série ganhar ...</a></li>                
+              <li><a href="#vinijr">Vini Jr. leva encarada de cachorro na casa de influenciador...</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cardLateral"> 
+        <h4>Veja também</h4>
+        <ul>
+          <li><a href="#noticias"> Notícias </a></li>
+          <li><a href="#tabelaDeArtigos"> Notícias Populares</a></li>
+          <li><a href="#videos"> videos </a></li>
+          <li><a href="#contato"> Contato </a></li>
+        </ul>
+      </div>
     </aside>
+
     <footer>
-        <h2>Portal de notícias</h2>
-        <div>
-            
-            <h3> Continue lendo</h3>
-            <ul>
-                <li> <a href="#artigos"> Artigos </a> </li>
-                <li> <a href="#noticias"> Notícias </a> </li>
-                <li> <a href="#tabelaDeArtigos"> Notícias Populares</a> </li>
-                <li> <a href="#videos"> videos </a> </li>
-                <li> <a href="#contato"> Contato </a> </li>
-            </ul>
-        </div>
-        <div>
-            <h3> Veja nossos artigos</h3>
-            <ul>
-                <li> <a href="#artigosFutebol"> Futebol</a> </li>
-                <li> <a href="#artigosPolitica"> Política </a> </li>
-                <li> <a href="#artigosEntretenimento"> Entretenimento </a> </li>
-                
-            </ul>
-        </div>
-        <div>
-        
-            <h3> Nossas Redes Sociais</h3>
-            <ul>
-                <li> <a> Instagram </a> </li>
-                <li> <a> Facebook  </a> </li>
-                <li> <a> YouTube   </a> </li>
-                <li> <a> LinkedIn  </a> </li>
-               
-            </ul>
-        </div>
-        
-        <h3> &copy; Direitos Reservados - Feito por <strong>Gustavo Quilante</strong></h3>
+      <h2>Portal de notícias</h2>
+      <div>
+        <h3>Continue lendo</h3>
+        <ul>
+          <li><a href="#artigos"> Artigos </a></li>
+          <li><a href="#noticias"> Notícias </a></li>
+          <li><a href="#tabelaDeArtigos"> Notícias Populares</a></li>
+          <li><a href="#videos"> videos </a></li>
+          <li><a href="#contato"> Contato </a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Veja nossos artigos</h3>
+        <ul>
+          <li><a href="#artigosEsportes"> Esportes</a></li>
+          <li><a href="#artigosPolitica"> Política </a></li>
+          <li><a href="#artigosEntretenimento"> Entretenimento </a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Nossas Redes Sociais</h3>
+        <ul>
+          <li><a> Instagram </a></li>
+          <li><a> Facebook </a></li>
+          <li><a> YouTube </a></li>
+          <li><a> LinkedIn </a></li>
+        </ul>
+      </div>
+
+      <h3>
+        &copy; Direitos Reservados - Feito por <strong>Gustavo Quilante</strong>
+      </h3>
     </footer>
   </body>
 </html>

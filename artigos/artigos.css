@@ -1,0 +1,10 @@
+.colunaDoArtigo{
+  padding-top: var(--20x);
+  gap: var(--5x);
+}
+.colunaDoArtigo h3{
+    font-size: 2rem;  
+}
+.colunaDoArtigo p{
+  padding: 0 1rem;
+}

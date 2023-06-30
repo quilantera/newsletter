@@ -8,6 +8,7 @@
     --primario: #0A2463;
     --primario-hover:#09193D;
     --secundario:#0f3591;
+    --secundario-hover:#0f3591;
     --contraste:#ffef91;
     --texto-primario: #333333;
     --texto-secundario:#696969;
@@ -41,8 +42,9 @@
     margin: 0;
     padding: 0;
     border-radius: 2px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in;
     font-family: 'Poppins', sans-serif;
+    scroll-margin-top: 80px;
 }
 html{
     scroll-behavior: smooth;
@@ -59,20 +61,22 @@ h1 {
     color: white;
     letter-spacing: 1px;
     font-size: var(--titulo);
-
-
+    font-weight: 600;
 }
 h2{
     text-align: center;
     text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;    
     font-size: var(--titulo);
     color: var(--texto-primario);
 }
 h3{
     padding-top: var(--10x);
-    font-size: var(--grande);
+    font-size: var(--muito-grande);
     font-weight: 600;
-    color: var(--texto-primario);
+    text-transform: uppercase;  
+    color: var(--secundario);
 }
 h4{
     font-size: var(--grande);
@@ -92,22 +96,24 @@ a{
     text-decoration: none;
 }
 
-/* imagem */ 
+/*============ imagem ============== */ 
 img{
     object-fit: cover;
 }
 
 
 
-/*containers*/
+/*=========== containers ==============*/
 header{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--primario);
-    padding: var(--5x) 8%;
-    
+    padding: 0 8%;
+    height: 80px;
+    position: fixed;
+    z-index:100;
 }
 nav {
     color: white;
@@ -117,25 +123,29 @@ nav {
 }
 main{
      width: 68%;
+     padding-top: 40px;
      padding-left: var(--7x);
      display: flex;
      flex-direction: column;
      gap: var(--10x);
+     min-height: 400px;
 }
 section{
     display: flex;
     flex-direction: column;
-    gap: var(--4x);
+    
     padding: var(--10x) var(--3x);
 }
 
 aside{
      width: 30%;
+     
+     min-height: 300px;
 }
 footer{
     width:100%;
 }
-/*navBar*/
+/*============= NavBar ============== */
 .navLink {
     text-decoration: none;
     font-size: var(--pequeno);
@@ -145,9 +155,9 @@ footer{
 .navLink:hover {
     color: var(--contraste);
 }
-/* Artigos */
+/* ============= Artigos =============== */
 .CardDeArtigo{
-    padding: var(--10x) 0;
+    padding: var(--8x) 0;
     display: flex;
     gap: var(--4x);
     aling-items: center;
@@ -159,7 +169,7 @@ footer{
     background: var(--background3);
 }
 .CardDeArtigo:hover h4{
-    color: var(--primario);
+    color: var(--secundario);
 }
 .imagemCardDeArtigo{
     width:340px;
@@ -175,7 +185,7 @@ footer{
     padding-right: var(--10x);
 }
 
-/* tabela artigos */
+/* =========== tabela artigos =============*/
 table{
     margin-top: var(--4x);
     align-items: center;
@@ -195,7 +205,7 @@ tr:hover {
     background: var(--background2);
 }
 
-/* Seção de Videos */
+/* =============== Seção de Videos =========== */
 #videos{
     padding: var(--10x) 1%;
 }
@@ -214,7 +224,7 @@ tr:hover {
     overflow: scroll;
     gap: var(--4x);
 }
-    /*scrollbar*/
+/* ================ scrollbar ============*/
     .carrosselDeVideos::-webkit-scrollbar{
         width: 0;
         height: var(--2x);
@@ -242,7 +252,7 @@ tr:hover {
     padding: var(--1x);
     text-align: center;
 }
-/* formulário */
+/* ======== formulário ============= */
 
 form{
     align-self: center;
@@ -277,7 +287,61 @@ button{
 button:hover{
     background-color: var(--primario);
 }
-/*--------------footer-----------*/
+
+/* ======== aside ============= */
+aside{
+    padding: 140px var(--8x);
+    display: flex;
+    flex-direction: column;
+    gap: var(--10x);
+}
+.cardLateral{
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: var(--5x);
+    border-radius: var(--1x);
+}
+.cardLateral h4{
+    font-weight: 600;
+    color: var(--secundario);
+    padding: var(--2x) 0;
+    margin-bottom: var(--4x);
+    font-size: var(--mediano);
+    border-bottom: 1px solid var(--borda);
+}
+.cardLateral ul{
+    padding: var(--3x) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--2x);
+    list-style: none;
+}
+.cardLateral  ul li ul li{
+    margin: 0 var(--6x);
+    list-style: disc ;
+    text-align: justify;
+}
+.cardLateral  ul li ul li:hover{
+    background: var(--background);
+}
+.cardLateral ul h5{
+    font-size: var(--pequeno);
+
+}
+.cardLateral ul li a{
+    font-size: var(--muito-pequeno);
+  
+    color: var(--texto-primario);
+    width: 100%;
+    
+}
+.cardLateral ul li a:hover{
+    color: var(--secundario-hover);  
+    font-weight: 400;
+}
+
+/* =========== footer ==================*/
 footer{
     padding: var(--10x);
     background-color: var(--primario-hover);
@@ -293,10 +357,11 @@ footer div h3{
     padding-top: var(--5x);
     padding-bottom: var(--2x);
     color: white;
-    font-size: var(--grande);
+    font-size: var(--medio);
 }
 footer div ul{
     padding: var(--1x);
+    padding-left: var(--2x);
     list-style: none;
     text-decoration: none;
     display: grid;
@@ -307,7 +372,7 @@ footer div ul li a{
     list-style: none;
     text-decoration: none;
     color: white;
-    font-size: var(--mediano);
+    font-size: var(--pequeno);
 }
 footer div ul li a:hover{
     color: var(--contraste);
@@ -315,7 +380,7 @@ footer div ul li a:hover{
 footer h2{
     color: white;
     letter-spacing: 2px;
-    padding: 0;
+    padding-bottom: var(--6x);
     width:100%; 
     font-size: 40px;
     text-transform: none;
@@ -323,6 +388,8 @@ footer h2{
 footer h3{
     color: white;
     font-weight: 500;
+    text-transform: none;
+    font-size: var(--medio);
 }
 footer h3 strong{
     letter-spacing: 1px;
